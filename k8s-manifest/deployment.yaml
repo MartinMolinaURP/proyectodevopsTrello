@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blockmaster
+spec:
+  selector:
+    matchLabels:
+      name: blockmaster
+  template:
+    metadata:
+      labels:
+        name: blockmaster
+    spec:
+      containers:
+        - image: rcronald/block-master
+          name: blockmaster
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+              protocol: TCP

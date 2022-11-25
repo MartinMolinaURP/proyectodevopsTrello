@@ -1,0 +1,21 @@
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: blockmaster
+  #annotations:
+  #  nginx.ingress.kubernetes.io/rewrite-target: /
+  # cambiar 20.72.99.142 por el IP de tu Ingress 
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: blockmaster-dev.20.72.99.142.nip.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service: 
+            name: blockmaster
+            port:
+              number: 80
