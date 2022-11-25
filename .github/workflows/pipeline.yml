@@ -111,7 +111,7 @@ jobs:
         id: set-context
         uses: azure/aks-set-context@v3
         with:
-          resource-group: 'RGEUK8S' 
+          resource-group: 'rgeuk8s' 
           cluster-name: 'demok8s'
       - name: Setup kubectl
         id: install-kubectl
