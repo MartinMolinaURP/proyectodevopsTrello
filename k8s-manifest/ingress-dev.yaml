@@ -2,20 +2,20 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: blockmaster
+  name: trello
   #annotations:
   #  nginx.ingress.kubernetes.io/rewrite-target: /
   # cambiar 20.72.99.142 por el IP de tu Ingress 
 spec:
   ingressClassName: nginx
   rules:
-  - host: blockmaster-dev.20.72.99.142.nip.io
+  - host: trello-dev.20.72.99.142.nip.io
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service: 
-            name: blockmaster
+            name: trello
             port:
               number: 80

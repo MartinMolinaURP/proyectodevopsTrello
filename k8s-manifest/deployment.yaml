@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: blockmaster
+  name: trello
 spec:
   selector:
     matchLabels:
-      name: blockmaster
+      name: trello
   template:
     metadata:
       labels:
-        name: blockmaster
+        name: trello
     spec:
       containers:
-        - image: rcronald/block-master
-          name: blockmaster
+        - image: MartinMolinaURP/proyectodevopsTrello
+          name: trello
           imagePullPolicy: Always
           ports:
             - containerPort: 80
