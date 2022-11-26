@@ -12,7 +12,7 @@ spec:
         name: trello
     spec:
       containers:
-        - image: MartinMolinaURP/proyectodevopsTrello
+        - image: martinurp/trello
           name: trello
           imagePullPolicy: Always
           ports:
