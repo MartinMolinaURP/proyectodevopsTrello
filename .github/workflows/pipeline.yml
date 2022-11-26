@@ -125,5 +125,5 @@ jobs:
              k8s-manifest/deployment.yaml
              k8s-manifest/ingress-dev.yaml
              k8s-manifest/service.yaml
-          images: 'MartinMolinaURP/proyectodevopsTrello:main'
+          images: 'martinurp/trello:main'
           pull: false
