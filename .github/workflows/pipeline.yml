@@ -128,4 +128,4 @@ jobs:
           images: 'martinurp/trello:main'
           pull: false
       - name: Restart application
-        run: kubectl rollout Restart deployment/trello
+        run: kubectl rollout restart deployment/trello
