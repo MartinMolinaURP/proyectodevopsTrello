@@ -9,7 +9,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: trello-dev.20.72.99.142.nip.io
+  - host: trello-dev.20.237.44.35.nip.io
     http:
       paths:
       - path: /
