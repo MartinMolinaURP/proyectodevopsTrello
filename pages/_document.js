@@ -15,6 +15,7 @@ class MainDocument extends Document {
           <NextScript />
           {/*Below we add the modal wrapper*/}
           <div id="modal-root"></div>
+          <h1>Probando</h1>
         </body>
       </Html>
     );
