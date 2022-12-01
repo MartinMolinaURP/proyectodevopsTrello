@@ -127,3 +127,5 @@ jobs:
              k8s-manifest/service.yaml
           images: 'martinurp/trello:main'
           pull: false
+      - name: Restart application
+        run: kubectl rollout Restart deployment/trello
