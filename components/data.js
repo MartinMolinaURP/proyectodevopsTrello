@@ -8,7 +8,7 @@ export const todoList = [
     },
     comments: [
       {
-        text: 'este feature es prioritario',
+        text: 'este feature es importante',
         user: {
           name: 'pepito',
           avatar: '/avatar.png',
