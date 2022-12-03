@@ -32,7 +32,7 @@ export const todoList = [
     }
   },
   {
-    title: 'añadir usuarios',
+    title: 'añadir usuario',
     id: 5321,
     user: {
       name: 'Miguel', 
