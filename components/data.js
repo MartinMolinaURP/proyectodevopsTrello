@@ -1,6 +1,6 @@
 export const todoList = [
   {
-    title: 'Añadir las targetas',
+    title: 'Añadir las tarjetas',
     id: 123,
     user: {
       name: 'pepito',
